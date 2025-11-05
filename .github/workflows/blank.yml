@@ -19,6 +19,9 @@ jobs:
   Task: 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
       - name: List all file in repo
         run: |
           echo "The repo ${{ github.repository }} contains the following files:"
