@@ -22,6 +22,10 @@ on:
         description: 'A True/False Optional Input'
         default: false
         type: boolean
+      environment:
+        description: 'Select environment'
+        required: true
+        type: environment
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
